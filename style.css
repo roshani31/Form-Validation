@@ -1,0 +1,105 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --color:linear-gradient(to left,rgb(224, 97, 161),rgb(163, 64, 163));
+}
+body{
+    background-image:url(contact.jpg);
+    background-size: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+}
+.container{
+    background-color: #fff;
+    border-radius: 7px;
+    overflow: hidden;
+    width:37%;
+    -webkit-border-radius:10px;
+}
+.header{
+    background: var(--color);
+    padding: 20px 0;
+}
+.header h1{
+    color: black;
+    text-align: center;
+    font-size: 20px;
+}
+.form{
+    padding: 35px;
+    width: 101%;
+}
+.form-control{
+    margin-bottom: 30px;
+    position: relative;
+}
+.form-control label{
+    display: inline-block;
+    margin-bottom: 5px;
+}
+.form-control input{
+    width: 100%;
+    border: 2px solid rgb(201, 187, 187);
+    border-radius: 5px;
+    display: block;
+    font-size: 14px;
+    padding: 12px;
+}
+.form-control input:focus {
+    outline: 0;
+    border-color: black;
+}
+.form-control.success input{
+    border-color: green;
+}
+.form-control.error input{
+    border-color: red;
+}
+.form-control i{
+    position: absolute;
+    right: 12px;
+    top: 38px;
+    visibility: hidden;
+}
+.form-control.success i.fa-check-circle{
+    color: green;
+    visibility: visible;
+}
+.form-control.error i.fa-exclamation-circle{
+    color: red;
+    visibility: visible;
+}
+.form-control small{
+    color: red;
+    position: absolute;
+    left: 0;
+    visibility: hidden;
+    
+}
+.form-control.error small{
+    visibility: visible;
+}
+.form .btn{
+    font-size: 10px;
+    padding: 15px 0;
+    margin-top: 20px;
+    display: block;
+    background: var(--color);
+    border: none;
+    outline: none;
+    color: #fff;
+    width: 100%;
+    font-weight: bold;
+    transition: all 1s ease;
+    background:var(--color) ;
+
+}
+.form .btn:hover {
+    background: linear-gradient(to right,rgb(224, 97, 161),rgb(104, 13, 104));
+}
